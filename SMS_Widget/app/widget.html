@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css" />
+    <script src="https://live.zwidgets.com/js-sdk/1.1/ZohoEmbededAppSDK.min.js"></script>
+</head>
+
+<body>
+    <div class="widget">
+        <!-- Номер телефона -->
+        <label for="phone">Phone Number</label>
+        <input type="text" id="phone" placeholder="+1234567890" />
+
+        <!-- Выпадающий список шаблонов -->
+        <label for="template">SMS Template</label>
+        <select id="template">
+            <option disabled selected>Choose SMS template</option>
+            <option value="template1">Template 1</option>
+            <option value="template2">Template 2</option>
+            <option value="template3">Template 3</option>
+        </select>
+
+        <!-- Обертка для текстового поля и кнопки -->
+        <label for="templateText">Template Text</label>
+        <div class="textarea-button-wrapper">
+            <textarea id="templateText" rows="6" placeholder="Selected template text will appear here..."></textarea>
+            <button id="sendBtn" type="button">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

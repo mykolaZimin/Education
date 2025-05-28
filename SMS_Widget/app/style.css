@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center; /* по горизонтали */
+  align-items: center; /* по вертикали */
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+/* Блок-виджет */
+.widget {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Общие стили для полей */
+label {
+  font-weight: bold;
+  margin-top: 20px;
+  display: block;
+}
+
+input[type="text"],
+select,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+
+/* Обёртка textarea и кнопки */
+.textarea-button-wrapper {
+  display: flex;
+  align-items: center;
+  margin-top: 5px;
+}
+
+textarea {
+  flex-grow: 1;
+  resize: vertical;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+}
+
+button {
+  margin-left: 10px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  height: 50px;
+}
